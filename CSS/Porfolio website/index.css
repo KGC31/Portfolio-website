@@ -1,0 +1,30 @@
+html{
+    margin:0;
+    font-size: calc(110vw / 86);
+}
+
+body{
+    margin: 0%;
+    background-image: url("/HTML/Portfolio website/Images src/Untitled.png");
+    background-repeat: repeat-y;
+    background-size: 100vw;
+}
+
+p{
+    color: #fff;
+    margin: 0%;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #61dafb;
+    margin: 0%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 12px;
+    }
+}

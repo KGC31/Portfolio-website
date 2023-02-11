@@ -57,7 +57,7 @@
     
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5vh;
+    bottom: 0vh;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,6 +1,6 @@
 #footer_container{
     position: relative;
-    height: 50vh;
+    height: 45vh;
 
     margin-top: 10vh;
     padding-top: 5vh;
@@ -52,12 +52,11 @@
     transform: translateY(-50%);
 }
 
-#Copyright{
-    position: absolute;
-    
-    left: 50%;
-    transform: translateX(-50%);
+#Copyright{    
+    text-align: center;
     bottom: 0vh;
+
+    background-color: #0B172A;
 }
 
 @media screen and (max-width: 768px) {

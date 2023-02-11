@@ -41,8 +41,8 @@
 .circular-progress {
     display: block;
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 11rem;
+    width: 11rem;
     color: #61dafb;
     border-radius: 50%;
     display: grid;

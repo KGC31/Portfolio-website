@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#skills_container {
+    margin-top: 15vh;
+}
+
+#skills_bar{
+    display: flex;
+
+    padding-top: 4rem;
+    align-self: center;
+    text-align: center;
+
+    color: #fff;
+}
+
+#skills_bar p{
+    margin-top: 1rem;
+}
+
+#Circular{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem 2rem;
+
+    align-self: center;
+    
+    width: 50vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress {
+    display: block;
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    color: #61dafb;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #0B172A;
+    border-radius: 50%;
+}
+
+.value-container{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.Bar{
+    padding: 0 30px;
+    align-items: center;
+    width: 60vw;
+    /* background-color: #0B172A;
+    border: 2px solid #0B172A;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2); */
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28,151,252,0.6);
+}
+.html-bar{
+    /* animation: bar-fill 2s forwards; */
+    max-width: 70%;
+}
+.css-bar{
+    max-width: 50%;
+}
+.js-bar{
+    max-width: 20%;
+}
+.ts-bar{
+    max-width: 5%;
+}
+
+.bar-fill{
+    animation: bar-fill 2s forwards;
+}
+
+@keyframes bar-fill{
+    100%{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #skills_bar{
+        flex-direction: column;
+    }
+    #skills_bar p{
+        font-size: 1.2rem;
+    }
+    .Bar{
+        margin-top: 10vh;
+        width: 100%;
+    }
+}

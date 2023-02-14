@@ -1,0 +1,9 @@
+#navbar{
+    position: sticky;
+
+    display: flex;
+
+    top: 0%;
+
+    width: 1.5rem;
+}

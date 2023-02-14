@@ -1,0 +1,89 @@
+#contact_me_container{
+    position: relative;
+    margin-top: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+    color: #fff;
+    text-align: center;
+}
+
+#contact_me_container img{
+    width: 80vw; 
+    height: 120vh;
+    z-index: -1;
+}
+
+#contact_me{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contact_me *{
+    margin: 0.2rem;
+}
+
+#contact_me p{
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#contact_me input, textarea{
+    padding: 0.7rem;
+    width: 50vw;
+    background-color: #0B172A;
+    border: #61dafb 2px solid;
+    border-radius: 2rem;
+    color: #61dafb;
+}
+
+#contact_me textarea{
+    border-radius: 1rem;
+}
+
+#contact_me input:hover, textarea:hover{
+    transform: (-1rem, -1rem);
+    box-shadow: #61dafb 0.2rem 0.3rem;
+}
+
+#contact_me button{
+    margin-top: 3rem;
+    height: 2rem;
+    width: 5rem;
+    background: #61dafb;
+    border: #61dafb 2px solid;
+    border-radius: 2rem;
+    color: #0B172A;
+    align-self: center;
+}
+
+#contact_me button:hover{
+    background-color: #0B172A;
+    color: #61dafb;
+    box-shadow: #61dafb 0.1rem 0.2rem;
+    cursor: pointer;
+    transform: translate(-0.05rem, -0.1rem);
+}
+
+@media screen and (max-width:768px) {
+    #contact_me_container{
+        padding: 0;
+    }
+
+    #contact_me_container img{
+        width: 90vw;
+        height: 70vh;
+    }
+
+    #contact_me{
+        top: 15vh;
+    }
+}

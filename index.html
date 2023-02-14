@@ -249,7 +249,7 @@
         <p>Get in touch</p>
         <h2>CONTACT ME</h2>
         <img src="/Portfolio website/Images src/Envelope.png" alt="">
-        <form action="#" id="contact_me" onsubmit="sendEmail(); reset(); return false;">
+        <form action="#" id="contact_me">
             <p>Name</p>
             <input type="text" id="name" placeholder="What's ur name?">
             <p>Email</p>
@@ -259,22 +259,6 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "kimnguyenhcmus@gmail.com",
-                Password : "C305CA0BF1B88657CB7F88AD077FA0D840C6",
-                To : 'kimnguyenhcmus@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New contact form enquiry",
-                Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("Message").value
-            }).then(
-            message => alert("Message Sent Successfully")
-            );
-        }
-    </script>
 
     <section id="footer_container">
         <h2>Kim Nguyen</h2>
@@ -295,10 +279,11 @@
                 </div>
             </a>
         </div>
-        <p style="text-align: center; margin-top: 1vh; color: #61dafb;">Email: kimnguyenblc@gmail.com - Tele: 0916722263</p>
+        
     </section>
     <div id="Copyright">
         <p>© Kim Nguyen. All rights reserved.</p>
+        <p style="text-align: center; color: #61dafb;">Email: kimnguyenblc@gmail.com - Tele: 0916722263</p>
     </div>
 </body>
 </html>

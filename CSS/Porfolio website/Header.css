@@ -36,11 +36,15 @@
 #header_flex_1 div{
     margin: 1.5rem;
     justify-content: center;
-    align-items: center;
+}
+
+#header_flex_1_text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
 }
 
 #button1{
-    margin-top: 3rem;
     padding: 0.5rem;
 
     width: fit-content;

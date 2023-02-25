@@ -18,8 +18,9 @@
 }
 
 .project_card{
-    display: flex;
-    flex-direction: column;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 40% 53% 7%;
     padding: 1.5rem;
     border: #61dafb 3px solid;
     border-radius: 1rem;
@@ -31,6 +32,12 @@
 
     background-color: #0B172A;
 
+}
+
+.project_card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 .project_card h3{
@@ -54,6 +61,27 @@
 
 .project_card:hover{
     animation: card_hover 0.7s forwards;
+}
+
+.project_card a{
+    text-decoration: none;
+    width: 6rem;
+}
+
+.project_card a > button{
+    height: 100%;
+    width: 6rem;
+    background-color: transparent;
+    color: #61dafb;
+    border: 2px #61dafb solid;
+    border-radius: 1rem;
+}
+
+.project_card a > button:hover{
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #fff;
+    font-weight: 600;
 }
 
 @keyframes card_hover{

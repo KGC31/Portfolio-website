@@ -71,16 +71,16 @@
 .project_card a > button{
     height: 100%;
     width: 6rem;
-    background-color: transparent;
-    color: #61dafb;
+    background-color: #61dafb;
+    color: #0B172A;
     border: 2px #61dafb solid;
     border-radius: 1rem;
 }
 
 .project_card a > button:hover{
     cursor: pointer;
-    background-color: #61dafb;
-    color: #fff;
+    background-color: #0B172A;
+    color: #61dafb;
     font-weight: 600;
 }
 

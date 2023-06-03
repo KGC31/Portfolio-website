@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/CSS/Porfolio website/index.css">
     <link rel="stylesheet" href="/CSS/Porfolio website/Scroll bar.css">
     <link rel="stylesheet" href="/CSS/Porfolio website/Navbar.css">
+    <link rel="stylesheet" href="/CSS/Porfolio website/Typing text.css">
     <link rel="stylesheet" href="/CSS/Porfolio website/Header.css">
     <link rel="stylesheet" href="/CSS/Porfolio website/About me.css">
     <link rel="stylesheet" href="/CSS/Porfolio website/Experience.css">
@@ -36,26 +37,25 @@
 </head>
 <body>
     <section id="navbar">
-
-    </section>
+    </section>   
 
     <section id="header_container">
         <div id="header_flex_1">
             <div id="header_flex_1_text">
-                <p>Greetings! I am</p>
-                <p style="font-size: 3rem;">NGUYEN VIET KIM</p>
-                <p style="font-size: 1.3rem;">An Information Technology junior student</p>
-                <br>
-                <p>Want to get know more about me?</p>
-                <p>Let's give you ride!!!</p>
-                <a href="#contact_me_container" id="button1">Contact me</a>
+                <div class="header-text"><div class="container">
+                        <h1>I'm <span class="auto-type"></span> </h1>
+                    </div>
+                    <p>And i'm a 2nd year student of Information Technology faculty, Ho Chi Minh University of Science</p>
+                </div>
+                <div class="header-buttons">
+                    <a href="">Download CV</a>
+                    <a href="">Contact me</a>
+                </div>
             </div>
-            
             <div>
                 <img src="/Portfolio website/Images src/Hi there.png" alt="ASCII art">
             </div>
-        </div>
-
+        </div>   
         <div id="header_flex_2">
             <a class="List1" href="#about_me_container">
                 <i class="fa-solid fa-info"></i><br>
@@ -81,8 +81,7 @@
                 <i class="fa-regular fa-envelope"></i><br>
                 <p>Contact Me</p>
             </a>
-        </div>  
-        
+        </div>       
     </section>
 
     <div id="Scroll_Down">
@@ -102,9 +101,10 @@
                 <img src="/Portfolio website/Images src/dot.png" alt="">
             </div>
             <div id="about_me">
-                <p style="font-size: 1.5rem;">A Student of Information Technology Faculty, HCMUS.</p>
+                <h3>ABOUT ME</h3>
+                <p>Let me introduce myself</p>
                 <br>
-                <p style="color: #fff;">I share great interest in technology and designing. I am on my way to be a software, game and fullstack developer.</p>
+                <p>I'm an IT student at HCMUS, 2nd year. I have quite a lot intention, for example, i am challenging myself with website designing and Unity games.However, Software Engineering and Data Science are majors that i'm looking forward to.</p>
             </div>
         </div>
     </section>
@@ -258,18 +258,100 @@
     </section>
 
     <section id="contact_me_container">
-        <p>Get in touch</p>
-        <h2>CONTACT ME</h2>
-        <img src="/Portfolio website/Images src/Envelope.png" alt="">
-        <form action="#" id="contact_me">
-            <p>Name</p>
-            <input type="text" id="name" placeholder="What's ur name?">
-            <p>Email</p>
-            <input type="text" id="email" placeholder="How about email?">
-            <p>Message</p>
-            <textarea name="Message" id="" rows=8" placeholder="Do you wanna say anything?..."></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <!-- <p>Get in touch</p>
+        <h2>CONTACT ME</h2> -->
+        <div class="container">
+            <img src="img/shape.png" class="square" alt="" />
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                  Feel free to contact me for any further discussion. You can either fill the form, directly through social media or my telephone if it's a serious problem.
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <img src="img/location.png" class="icon" alt="" />
+                    <p>Ho Chi Minh city, Viet Nam</p>
+                  </div>
+                  <div class="information">
+                    <img src="img/email.png" class="icon" alt="" />
+                    <p>kimnguyenblc@gmail.com</p>
+                  </div>
+                  <div class="information">
+                    <img src="img/phone.png" class="icon" alt="" />
+                    <p>0916722263</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Connect with me :</p>
+                  <div class="social-icons">
+                    <a href="https://www.facebook.com/KGC31.dev/" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kgc31.dev/" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/KGC31" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="index.html" autocomplete="off">
+                  <h3 class="title">Contact us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Username</label>
+                    <span>Username</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <input type="submit" value="Send" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+      
+          <script>
+            const inputs = document.querySelectorAll(".input");
+
+            function focusFunc() {
+                let parent = this.parentNode;
+                parent.classList.add("focus");
+            }
+
+            function blurFunc() {
+                let parent = this.parentNode;
+                if (this.value == "") {
+                    parent.classList.remove("focus");
+                }
+            }
+
+            inputs.forEach((input) => {
+                input.addEventListener("focus", focusFunc);
+                input.addEventListener("blur", blurFunc);
+            });
+          </script>
     </section>
 
     <section id="footer_container">
@@ -297,5 +379,16 @@
         <p>© Kim Nguyen. All rights reserved.</p>
         <p>Email: kimnguyenblc@gmail.com - Tele: 0916722263</p>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Eating", "Coding", "Sleeping", "Nguyen Viet Kim"],
+            typeSpeed : 50,
+            backSpeed : 50,
+            looped : false
+        });
+    </script>
 </body>
 </html>

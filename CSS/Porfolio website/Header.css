@@ -44,27 +44,31 @@
     row-gap: 0.2rem;
 }
 
-#button1{
-    padding: 0.5rem;
-
-    width: fit-content;
-
-    color: #222222;
+#header_flex_1_text .header-buttons a{
+    color: #61dafb;
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 700;
-
-    cursor: pointer;
-
-    background-color: #61dafb;
-
-    border: 2px #61dafb solid;
-    border-radius: 2rem;
+    text-align: center;
+    border: #61dafb 1px solid;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 800;
+    transition: 0.5s;
 }
 
-#button1:hover{
+#header_flex_1_text .header-buttons a:hover{
+    color: #fff;
+    border-color: #fff;
+}
+
+#header_flex_1_text .header-buttons a:nth-child(1){
+    background-color: #61dafb;
+    color: #000;
+}
+
+#header_flex_1_text .header-buttons a:nth-child(1):hover{
     background-color: transparent;
-    color: #61dafb;
+    color: #fff;
+    border-color: #fff;
 }
 
 #header_flex_2{    

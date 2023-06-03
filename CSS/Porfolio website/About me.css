@@ -17,7 +17,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;;
 
-    width: 40vw;
+    width: 50vw;
 
     background-color: #0B172A;
 
@@ -33,7 +33,7 @@
 #about_me_container > img{
     height: 20rem; 
     width: calc(20/4*3)rem;
-
+    
     border: #61dafb 1px solid; 
 
     background-color: #0B172A;
@@ -42,15 +42,20 @@
 
 #about_me{
     padding: 2rem;
-
-    width: 40vw;
-
+    
+    width: 50vw;
+    
     color: #61dafb;
     background-color: #0B172A;
     
     border: #61dafb 0.5px solid;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+
+#about_me h3{
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 768px) {
